@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFT - Chocolat el plus</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://kit.fontawesome.com/b30af9879e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="loginBox">
+        <div class="videoBox">
+            <div class="textBox">
+                <h1>LFT - Chocolat et Plus</h1>
+                <p>Bombonería de Vanguardia</p>
+            </div>
+            <div class="videoFilter"></div>
+            <video autoplay muted loop>
+                <source src="../assets/video/chocolate-71747.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="formBox">
+            <h3>Login</h3>
+            <form id="form1">
+                <div class="inputBox" id="emailBox">
+                    <label for="email">Mail: </label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@mail.com" required>
+                    <span class="alert hide" id="alertEmail">Ingrese un correo válido</span>
+                </div>
+                <div class="inputBox">
+                    <label for="password">Contraseña: </label>
+                    <input type="password" name="password" id="password" placeholder="Password" required />
+                    <span class="alert hide" id="alertPass">Debe ingresar una contraseña valida</span>
+                </div>
+                <div class="submitBox">
+                    <button type="submit" id="btn1">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

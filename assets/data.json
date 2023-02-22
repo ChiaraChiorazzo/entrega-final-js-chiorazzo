@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "../assets/images/botellitas.jpeg",
+        "name":"Botellitas x 10 unidades",
+        "price": 4000
+    },
+    {
+        "id": 2,
+        "img": "../assets/images/cajax2.jpg",
+        "name":"Bombones x 2 unidades",
+        "price": 2600
+    },
+    {
+        "id": 3,
+        "img": "../assets/images/caja x8.jpg",
+        "name":"Bombones x 8 unidades",
+        "price": 4200
+    },
+    {
+        "id": 4,
+        "img": "../assets/images/cajax20.jpg",
+        "name":"Bombones x 20 unidadess",
+        "price": 6000
+    },
+    {
+        "id": 5,
+        "img": "../assets/images/regaloEmp.jpeg",
+        "name":"Regalo Empresarial x 20 cajitas",
+        "price": 9000
+    },
+    {
+        "id": 6,
+        "img": "../assets/images/Tnaranja.jpeg",
+        "name":"Tabletas",
+        "price":3000
+    }, 
+    {
+        "id": 7,
+        "img": "../assets/images/bandeja.jpeg",
+        "name":"Bandeja para mesa dulce",
+        "price": 12000
+    }
+]

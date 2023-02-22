@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFT- Chocolat et Plus</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://kit.fontawesome.com/b30af9879e.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="homeBox">
+        <div class="headerBox">
+            <div class="filter"></div>
+            <h1>Home</h1>
+        </div>
+        <div class="toolsBox">
+            <div class="search">
+                <form id="formSearch">
+                    <div class="inputBox" id="searchBox">
+                        <input type="search" name="search" id="search" placeholder="Buscar producto">
+                    </div>
+                    <button class="btn btnSearch" id="btnSearch">Buscar <i class="fa-solid fa-cart-shopping"></i></button>
+                </form>
+            </div>
+            <div class="optionsBox">
+                <a href="/car/car.html" class="btn btnCar">
+                    <span>Mi carrito</span> <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a class="btn btnCar" id="btnLow">
+                    <span>Menor precio</span> <i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <a class="btn btnCar" id="btnHigh">
+                    <span>Mayor precio</span> <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+        <div class="prodBox" id="prodBox"></div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

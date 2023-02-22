@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+   
+  }
+  .loginBox {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "v f";
+  }
+  @media screen and (max-width: 768px) {
+    .loginBox {
+      grid-template-columns: 50% 50%;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .loginBox {
+      grid-template-columns: 1fr;
+      grid-template-areas: "f";
+    }
+  }
+  .loginBox .videoBox {
+    grid-area: v;
+    position: relative;
+  }
+  @media screen and (max-width: 425px) {
+    .loginBox .videoBox {
+      display: none;
+    }
+  }
+  .loginBox .videoBox .textBox {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 3;
+    font-family: "Akshar", sans-serif;
+  }
+  .loginBox .videoBox .textBox h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+  }
+  .loginBox .videoBox .textBox p {
+    color: #fff;
+    font-size: 26px;
+    margin: 0;
+  }
+  .loginBox .videoBox .videoFilter {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .loginBox .videoBox video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 1;
+  }
+  .loginBox .formBox {
+    grid-area: f;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 425px) {
+    .loginBox .formBox {
+      background-color: #ccc;
+    }
+  }
+  .loginBox .formBox h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+  }
+  .loginBox .formBox form {
+    width: 60%;
+    font-family: "Open Sans", sans-serif;
+  }
+  .loginBox .formBox form .inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .loginBox .formBox form .inputBox label {
+    margin-bottom: 5px;
+  }
+  .loginBox .formBox form .inputBox input {
+    border: none;
+    border-bottom: 1px solid #666666;
+    padding: 10px 5px;
+    background-color: transparent;
+  }
+  .loginBox .formBox form .inputBox input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  .loginBox .formBox form .inputBox .alert {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+  }
+  .loginBox .formBox form .inputBox .alert.hide {
+    display: none;
+  }
+  .loginBox .formBox form .submitBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .loginBox .formBox form .submitBox button {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 500ms ease;
+  }
+  .loginBox .formBox form .submitBox button:hover {
+    background-color: #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease;
+  }
+  .loginBox .formBox form .submitBox button i {
+    font-size: 15px;
+  }
+  
+  .homeBox .headerBox {
+    position: relative;
+    background-image: url(../assets/images/bandeja.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+  .homeBox .headerBox .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  .homeBox .headerBox h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    z-index: 2;
+    font-family: "Akshar", sans-serif;
+  }
+  .homeBox .toolsBox {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 425px) {
+    .homeBox .toolsBox {
+      flex-direction: column;
+    }
+  }
+  .homeBox .toolsBox .search form .inputBox input {
+    width: 320px;
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 10px 5px;
+    background-color: transparent;
+  }
+  @media screen and (max-width: 425px) {
+    .homeBox .toolsBox .search form .inputBox input {
+      width: 100%;
+    }
+  }
+  .homeBox .toolsBox .search form .inputBox input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  .homeBox .toolsBox .search form .btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    transition: all 500ms ease;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  .homeBox .toolsBox .search form .btn:hover {
+    background-color: #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease;
+  }
+  .homeBox .toolsBox .search form .btn i {
+    font-size: 15px;
+  }
+  .homeBox .toolsBox .optionsBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  @media screen and (max-width: 425px) {
+    .homeBox .toolsBox .optionsBox {
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  }
+  .homeBox .toolsBox .optionsBox .btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    transition: all 500ms ease;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 425px) {
+    .homeBox .toolsBox .optionsBox .btn {
+      width: 50px;
+      margin: 15px 0 0 0;
+      display: flex;
+      justify-content: center;
+    }
+    .homeBox .toolsBox .optionsBox .btn span {
+      display: none;
+    }
+  }
+  .homeBox .toolsBox .optionsBox .btn:hover {
+    background-color: #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease;
+  }
+  .homeBox .toolsBox .optionsBox .btn i {
+    font-size: 15px;
+  }
+  .homeBox .back {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .homeBox .back .btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    transition: all 500ms ease;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 425px) {
+    .homeBox .back .btn {
+      width: 50px;
+      margin: 15px 0 0 0;
+      display: flex;
+      justify-content: center;
+    }
+    .homeBox .back .btn span {
+      display: none;
+    }
+  }
+  .homeBox .back .btn:hover {
+    background-color: #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease;
+  }
+  .homeBox .back .btn i {
+    font-size: 15px;
+  }
+  .homeBox .prodBox {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+  }
+  @media screen and (max-width: 425px) {
+    .homeBox .prodBox {
+      grid-template-columns: 1fr;
+    }
+  }
+  .homeBox .prodBox .prodCard {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-bottom: 10px;
+  }
+  .homeBox .prodBox .prodCard .img img {
+    width: 100%;
+    height:250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .homeBox .prodBox .prodCard .text {
+    width: 90%;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+  }
+  .homeBox .prodBox .prodCard .text .prodName {
+    font-weight: bold;
+  }
+  .homeBox .prodBox .prodCard .text .prodPrice {
+    font-size: 14px;
+  }
+  .homeBox .prodBox .prodCard hr {
+    width: 90%;
+    margin: auto;
+  }
+  .homeBox .prodBox .prodCard .options {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .homeBox .prodBox .prodCard .options .btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    transition: all 500ms ease;
+    margin-right: 15px;
+  }
+  .homeBox .prodBox .prodCard .options .btn:hover {
+    background-color: #000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease;
+  }
+  .homeBox .prodBox .prodCard .options .btn i {
+    font-size: 15px;
+  }
+  .homeBox .prodBox .prodCard .options .btnRemoveCar {
+    background-color: red;
+  }
